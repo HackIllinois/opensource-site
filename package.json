@@ -1,0 +1,24 @@
+{
+  "name": "site-opensource",
+  "version": "1.0.0",
+  "description": "HackIllinois Open Source Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HackIllinois/site-opensource.git"
+  },
+  "author": "HackIllinois",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HackIllinois/site-opensource/issues"
+  },
+  "homepage": "https://github.com/HackIllinois/site-opensource#readme",
+  "dependencies": {
+    "next": "^7.0.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  }
+}
