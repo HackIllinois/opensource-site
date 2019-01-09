@@ -16,8 +16,8 @@ const Index = () => (
     <body>
       <Header/>
       <Blurb/>
-      <Carousel/>
       <Quotes/>
+      <Carousel/>
       <Contact/>
       <Footer/>
     </body>
@@ -34,7 +34,7 @@ const Index = () => (
         width: 100%;
         box-sizing: border-box;
         color: white;
-        background-image: linear-gradient(to right top, #194f58, #195460, #185968, #195e70, #1a6378);
+        background-color: white;
       }
     `}</style>
   </div>

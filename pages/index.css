@@ -10,5 +10,8 @@ body {
     width: 100%;
     box-sizing: border-box;
     color: white;
-    background-image: linear-gradient(to right top, #194f58, #195460, #185968, #195e70, #1a6378);
 }
+@font-face {
+    font-family: 'GothamBlack';
+    src: local('GothamBlack'), url(./static/fonts/GothamBlack.otf) format('otf');
+  }

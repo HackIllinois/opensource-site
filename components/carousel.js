@@ -101,7 +101,53 @@ function Blurb(props) {
                 PROJECTS
             </Typography>
             {/* <GridList className={classes.gridList} cols={4}>
-            {Object.keys(projectData).map(project => (
+            <GridListTile key={project.name}>
+            <Card className={classes.card}>
+                    <CardMedia
+                    className={classes.media}
+                    image="https://cdn-images-1.medium.com/max/2000/1*y6C4nSvy2Woe0m7bWEn4BA.png"
+                    title="Contemplative Reptile"
+                    >
+                    <Chip className={classes.chipContribute} label="Contributed" color="primary"></Chip>
+                    <IconButton className={classes.githubLogo} color="inherit" padding="20px">
+                    <FontAwesomeIcon 
+                        icon={["fab", "github"]}
+                        size="md"/>
+                    </IconButton>
+                    <Typography className={classes.cardTitle} variant="h5">Julia
+                    </Typography>
+                    </CardMedia>
+                    <CardContent>
+                    <Typography className={classes.cardFont} variant="subtitle1">
+                    Julia is a high-level, high-performance dynamic language for technical computing.
+                    </Typography>
+                    </CardContent>
+                </Card>
+            </GridListTile>
+            <GridListTile key={project.name}>
+                <Card className={classes.card}>
+                    <CardMedia
+                    className={classes.media}
+                    image="https://cdn-images-1.medium.com/max/2000/1*y6C4nSvy2Woe0m7bWEn4BA.png"
+                    title="Contemplative Reptile"
+                    >
+                    <Chip className={classes.chipCreate} label="Contributed" color="primary"></Chip>
+                    <IconButton className={classes.githubLogo} color="inherit" padding="20px">
+                    <FontAwesomeIcon 
+                        icon={["fab", "github"]}
+                        size="md"/>
+                    </IconButton>
+                    <Typography className={classes.cardTitle} variant="h5">Julia
+                    </Typography>
+                    </CardMedia>
+                    <CardContent>
+                    <Typography className={classes.cardFont} variant="subtitle1">
+                    Julia is a high-level, high-performance dynamic language for technical computing.
+                    </Typography>
+                    </CardContent>
+                </Card>
+            </GridListTile> */}
+            {/* {Object.keys(projectData).map(project => (
                 <GridListTile key={project.name}>
                 <Card className={classes.card}>
                 <CardMedia
@@ -124,8 +170,8 @@ function Blurb(props) {
                 </CardContent>
                 </Card>
                 </GridListTile>
-            ))}
-      </GridList> */}
+            ))} */}
+      {/* </GridList> */}
             <div className={classes.cardCarousel}>
                 <Card className={classes.card}>
                     <CardMedia
@@ -134,6 +180,69 @@ function Blurb(props) {
                     title="Contemplative Reptile"
                     >
                     <Chip className={classes.chipContribute} label="Contributed" color="primary"></Chip>
+                    <IconButton className={classes.githubLogo} color="inherit" padding="20px">
+                    <FontAwesomeIcon 
+                        icon={["fab", "github"]}
+                        size="md"/>
+                    </IconButton>
+                    <Typography className={classes.cardTitle} variant="h5">Julia
+                    </Typography>
+                    </CardMedia>
+                    <CardContent>
+                    <Typography className={classes.cardFont} variant="subtitle1">
+                    Julia is a high-level, high-performance dynamic language for technical computing.
+                    </Typography>
+                    </CardContent>
+                </Card>
+                <Card className={classes.card}>
+                    <CardMedia
+                    className={classes.media}
+                    image="https://cdn-images-1.medium.com/max/2000/1*y6C4nSvy2Woe0m7bWEn4BA.png"
+                    title="Contemplative Reptile"
+                    >
+                    <Chip className={classes.chipCreate} label="Contributed" color="primary"></Chip>
+                    <IconButton className={classes.githubLogo} color="inherit" padding="20px">
+                    <FontAwesomeIcon 
+                        icon={["fab", "github"]}
+                        size="md"/>
+                    </IconButton>
+                    <Typography className={classes.cardTitle} variant="h5">Julia
+                    </Typography>
+                    </CardMedia>
+                    <CardContent>
+                    <Typography className={classes.cardFont} variant="subtitle1">
+                    Julia is a high-level, high-performance dynamic language for technical computing.
+                    </Typography>
+                    </CardContent>
+                </Card>
+                <Card className={classes.card}>
+                    <CardMedia
+                    className={classes.media}
+                    image="https://cdn-images-1.medium.com/max/2000/1*y6C4nSvy2Woe0m7bWEn4BA.png"
+                    title="Contemplative Reptile"
+                    >
+                    <Chip className={classes.chipCreate} label="Contributed" color="primary"></Chip>
+                    <IconButton className={classes.githubLogo} color="inherit" padding="20px">
+                    <FontAwesomeIcon 
+                        icon={["fab", "github"]}
+                        size="md"/>
+                    </IconButton>
+                    <Typography className={classes.cardTitle} variant="h5">Julia
+                    </Typography>
+                    </CardMedia>
+                    <CardContent>
+                    <Typography className={classes.cardFont} variant="subtitle1">
+                    Julia is a high-level, high-performance dynamic language for technical computing.
+                    </Typography>
+                    </CardContent>
+                </Card>
+                <Card className={classes.card}>
+                    <CardMedia
+                    className={classes.media}
+                    image="https://cdn-images-1.medium.com/max/2000/1*y6C4nSvy2Woe0m7bWEn4BA.png"
+                    title="Contemplative Reptile"
+                    >
+                    <Chip className={classes.chipCreate} label="Contributed" color="primary"></Chip>
                     <IconButton className={classes.githubLogo} color="inherit" padding="20px">
                     <FontAwesomeIcon 
                         icon={["fab", "github"]}

@@ -36,9 +36,11 @@
     "react-inline-svg": "^1.1.0",
     "react-inlinesvg": "^0.8.3",
     "react-social-media-icons": "^1.0.3",
+    "react-swipeable-views": "^0.13.0",
     "styled-jsx": "^3.1.2"
   },
   "devDependencies": {
+    "file-loader": "^3.0.1",
     "svg-inline-loader": "^0.8.0"
   }
 }

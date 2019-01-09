@@ -5,6 +5,7 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import SvgIcon from '@material-ui/core/SvgIcon';
+// import logo from '../static/logos/logo.svg';
 
 const styles = theme => ({
   root: {
@@ -83,6 +84,7 @@ function Blurb(props) {
         <Grid container sm={12}>
           {/* Left */}
           <Grid item sm={12} md={6} lg={6} className={classes.left}>
+          {/* <img src={logo} alt="HackIllinois Logo" /> */}
             <Typography className={classes.logo} variant="h3" component="h3">
               HACKILLINOIS
             </Typography>
@@ -94,12 +96,12 @@ function Blurb(props) {
           {/* Right */}
           <Grid item sm={12} md={6} lg={6}>
             <Typography className={classes.right} variant="h5" component="p">
-              2 years ago HackIllinois reinvented the college Hackathon. <p /> We brought the best <strong>open source engineers</strong> in the world to work with <strong>college students</strong> on open source.<p/>
+              Two years ago HackIllinois reinvented the college Hackathon. <p /> We brought the best <strong>open source engineers</strong> in the world to work with <strong>college students</strong> on open source.<p/>
             </Typography>
           </Grid>
         </Grid>
         <Typography className={classes.body} variant="h5" component="p">
-          Here is how we are doing so far:
+        At HackIllinois, we had:
       </Typography>
       <Grid container sm={12} className={classes.table}>
         <Grid item sm={4} xs={7}>
