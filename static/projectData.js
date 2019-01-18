@@ -21,7 +21,7 @@ const projectData = [
     "link": "https://airavata.apache.org/index.html"
   },
   {
-    "name": "Numpy",
+    "name": "NumPy",
     "desc": "",
     "image": "",
     "label": "contributed",
