@@ -111,8 +111,7 @@ function Blurb(props) {
                     <Chip className={classes.chipContribute} label="Contributed" color="primary"></Chip>
                     <IconButton className={classes.githubLogo} color="inherit" padding="20px">
                     <FontAwesomeIcon 
-                        icon={["fab", "github"]}
-                        size="md"/>
+                        icon={["fab", "github"]}/>
                     </IconButton>
                     <Typography className={classes.cardTitle} variant="h5">Julia
                     </Typography>
