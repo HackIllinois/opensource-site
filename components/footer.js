@@ -91,4 +91,3 @@ Footer.propTypes = {
 };
 
 export default withStyles(styles)(Footer);
-
