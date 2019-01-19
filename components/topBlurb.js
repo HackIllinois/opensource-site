@@ -16,19 +16,19 @@ const styles = theme => ({
     borderRadius: '0',
   },
   title: {
-    fontFamily: "Montserrat",
+    fontFamily: "Montserrat, GothamBlack, Helvetica, Arial, sans-serif",
     textAlign: "center",
     fontWeight: "regular",
     color: "white",
   },
   logo: {
-    fontFamily: "GothamBlack",
+    fontFamily: "GothamBlack, Montserrat, Helvetica, Arial, sans-serif",
     textAlign: "center",
     fontWeight: "medium",
     color: "white",
   },
   body: {
-    fontFamily: "Montserrat",
+    fontFamily: "Montserrat, GothamBlack, Helvetica, Arial, sans-serif",
     textAlign: "center",
     color: "white",
     useNextVariants: true,
@@ -37,7 +37,7 @@ const styles = theme => ({
     paddingBottom: theme.spacing.unit * 2,
   },
   right: {
-    fontFamily: "Montserrat",
+    fontFamily: "Montserrat, GothamBlack, Helvetica, Arial, sans-serif",
     textAlign: "right",
     color: "white",
     useNextVariants: true,
@@ -61,7 +61,7 @@ const styles = theme => ({
     margin: "0 auto",
     width: "70%",
     textAlign: "center",
-    fontFamily: "Montserrat",
+    fontFamily: "Montserrat, GothamBlack, Helvetica, Arial, sans-serif",
     padding: "10px",
   }
 });

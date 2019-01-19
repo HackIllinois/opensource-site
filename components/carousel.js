@@ -23,7 +23,7 @@ const styles = theme => ({
         paddingBottom: theme.spacing.unit * 2,
     },
     subtitle: {
-        fontFamily: "Montserrat",
+        fontFamily: "Montserrat, GothamBlack, Helvetica, Arial, sans-serif",
         fontWeight: "bold",
         textAlign: "center",
         color: "rgb(17, 17, 47)",
@@ -50,7 +50,7 @@ const styles = theme => ({
         marginBottom: 12,
     },
     cardTitle: {
-        fontFamily: 'Montserrat',
+        fontFamily: 'Montserrat, GothamBlack, Helvetica, Arial, sans-serif',
         color: 'white',
         position: 'absolute',
         bottom: 0,
@@ -66,18 +66,18 @@ const styles = theme => ({
         margin: theme.spacing.unit,
     },
     cardFont: {
-        fontFamily: "Montserrat",
+        fontFamily: "Montserrat, GothamBlack, Helvetica, Arial, sans-serif",
     },
     cardBlurb: {
-        fontFamily: "Montserrat",
+        fontFamily: "Montserrat, GothamBlack, Helvetica, Arial, sans-serif",
         fontWeight: 'bold'
     },
     chipContribute: {
-        fontFamily: "Montserrat",
+        fontFamily: "Montserrat, GothamBlack, Helvetica, Arial, sans-serif",
         background: 'rgb(237, 97, 164)'
     },
     chipCreate: {
-        fontFamily: "Montserrat",
+        fontFamily: "Montserrat, GothamBlack, Helvetica, Arial, sans-serif",
         background: 'rgb(64, 73, 158)'
     },
     githubLogo: {
@@ -181,8 +181,7 @@ function Blurb(props) {
                     <Chip className={classes.chipContribute} label="Contributed" color="primary"></Chip>
                     <IconButton className={classes.githubLogo} color="inherit" padding="20px">
                     <FontAwesomeIcon 
-                        icon={["fab", "github"]}
-                        size="md"/>
+                        icon={["fab", "github"]}/>
                     </IconButton>
                     <Typography className={classes.cardTitle} variant="h5">Julia
                     </Typography>
@@ -202,8 +201,7 @@ function Blurb(props) {
                     <Chip className={classes.chipCreate} label="Contributed" color="primary"></Chip>
                     <IconButton className={classes.githubLogo} color="inherit" padding="20px">
                     <FontAwesomeIcon 
-                        icon={["fab", "github"]}
-                        size="md"/>
+                        icon={["fab", "github"]}/>
                     </IconButton>
                     <Typography className={classes.cardTitle} variant="h5">Julia
                     </Typography>

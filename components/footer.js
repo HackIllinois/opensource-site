@@ -27,7 +27,7 @@ const styles = theme => ({
       [theme.breakpoints.up('sm')]: {
         display: 'block',
       },
-      fontFamily: 'GothamBlack',
+      fontFamily: 'GothamBlack, Montserrat, Helvetica, Arial, sans-serif',
       color: 'white',
     },
     menuButton: {

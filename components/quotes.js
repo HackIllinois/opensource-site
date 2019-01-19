@@ -48,17 +48,17 @@ const styles = theme => ({
         margin: 10,
       },
       quote: {
-        fontFamily: "Montserrat",
+        fontFamily: "Montserrat, GothamBlack, Helvetica, Arial, sans-serif",
         fontWeight: "22pt",
         color: 'rgb(17, 17, 47)',
         padding: theme.spacing.unit * 2,
       },
       name: {
-        fontFamily: "Montserrat",
+        fontFamily: "Montserrat, GothamBlack, Helvetica, Arial, sans-serif",
         color: 'rgb(17, 17, 47)',
       },
       project: {
-        fontFamily: "Montserrat",
+        fontFamily: "Montserrat, GothamBlack, Helvetica, Arial, sans-serif",
         color: 'rgb(17, 17, 47)',
       }
 });
