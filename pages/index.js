@@ -9,7 +9,7 @@ import Contact from '../components/contact'
 const Index = () => (
   <div>
     <Head>
-      <title>OpenSource @ HackIllinois</title>
+      <title>HackIllinois Open Source</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet"/>
     </Head>

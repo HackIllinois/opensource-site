@@ -11,7 +11,7 @@ import Avatar from '@material-ui/core/Avatar';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
-import IconButton from '@material-ui/core/IconButton';
+import Icon from '@material-ui/core/Icon';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -36,7 +36,7 @@ const styles = theme => ({
     card: {
         maxWidth: 335,
         margin: '0 auto',
-        borderRadius: '7%'
+        borderRadius: '7%',
     },
     bullet: {
         display: 'inline-block',
@@ -51,11 +51,11 @@ const styles = theme => ({
     },
     cardTitle: {
         fontFamily: 'Montserrat',
-        color: 'white',
-        position: 'absolute',
-        bottom: 0,
-        padding: '10px',
-        fontWeight: 'bold'
+        paddingBottom: '10px',
+        fontWeight: 'bold',
+    },
+    cardLink: {
+        textDecoration: 'none',
     },
     media: {
         height: 160,
@@ -70,20 +70,16 @@ const styles = theme => ({
     },
     cardBlurb: {
         fontFamily: "Montserrat",
-        fontWeight: 'bold'
+        fontWeight: 'bold',
     },
     chipContribute: {
         fontFamily: "Montserrat",
-        background: 'rgb(237, 97, 164)'
+        background: 'rgb(237, 97, 164)',
+        cursor: 'pointer',
     },
     chipCreate: {
         fontFamily: "Montserrat",
-        background: 'rgb(64, 73, 158)'
-    },
-    githubLogo: {
-        position: 'absolute',
-        right: 0,
-        padding: '5px 10px'
+        background: 'rgb(64, 73, 158)',
     },
     gridList: {
         flexWrap: 'nowrap',
@@ -92,34 +88,33 @@ const styles = theme => ({
       },
 });
 
-function Blurb(props) {
+function Carousel(props) {
     const { classes } = props;
     var projectData = require('../static/projectData');
     const projectData = projectData.projectData;
 
     let html = projectData.map(project => {
         return (
-            <GridListTile key={project.name}>
-                <Card className={classes.card}>
-                    <CardMedia
-                        className={classes.media}
-                        image="https://cdn-images-1.medium.com/max/2000/1*y6C4nSvy2Woe0m7bWEn4BA.png"
-                        title={project.name}
-                    >
-                        <Chip className={classes.chipContribute} color="primary" label={project.label}></Chip>
-                        <IconButton className={classes.githubLogo} color="inherit" padding="20px" href={project.link}>
-                        <FontAwesomeIcon 
-                            icon={["fab", "github"]}
-                            size="md"/>
-                        </IconButton>
-                        <Typography className={classes.cardTitle} variant="h5">{project.name}</Typography>
-                    </CardMedia>
-                    <CardContent>
-                        <Typography className={classes.cardFont} variant="subtitle1">
-                            {project.desc}
-                        </Typography>
-                    </CardContent>
-                </Card>
+            <GridListTile key={project.name} rows="3">
+                <a href={project.link} className={classes.cardLink}>
+                    <Card className={classes.card}>
+                        <CardMedia
+                            className={classes.media}
+                            image={project.image}
+                            title={project.name}
+                        >
+                            <Chip className={classes.chipContribute} color="primary" label={project.label}></Chip>
+                        </CardMedia>
+                        <CardContent>
+                            <Typography className={classes.cardTitle} variant="title">
+                                {project.name}
+                            </Typography>
+                            <Typography className={classes.cardFont} variant="subtitle1">
+                                {project.desc}
+                            </Typography>
+                        </CardContent>
+                    </Card>
+                </a>
             </GridListTile>
         );
     });
@@ -138,8 +133,8 @@ function Blurb(props) {
     );
 }
 
-Blurb.propTypes = {
+Carousel.propTypes = {
     classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Blurb);
+export default withStyles(styles)(Carousel);
