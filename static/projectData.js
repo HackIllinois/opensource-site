@@ -1,4 +1,4 @@
-const projectData = [
+module.exports.projectData = [
   {
     "name": "Julia",
     "desc": "",
