@@ -116,7 +116,7 @@ class Quotes extends React.Component {
   
       return (
         <div className={classes.root}>
-          <Grid container spacing={16}> 
+          <Grid container> 
           {testimonials.map((step, index) => (
             <Grid key={step.label} item xs={4}>
               <div className={classes.paperRoot}>

@@ -32,6 +32,7 @@ const styles = theme => ({
     },
     cardCarousel: {
         display: 'flex',
+	margin: '2px',
     },
     card: {
         maxWidth: 335,
