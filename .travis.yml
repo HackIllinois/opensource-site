@@ -7,13 +7,13 @@ cache:
 before_script:
   - npm install
 script:
-  - npm run build
+  - npm run build && npm run export
 deploy:
  - provider: s3
    access_key_id: $HACKILLINOIS_ACCESS_KEY
    secret_access_key: $HACKILLINOIS_SECRET_KEY
    bucket: $HACKILLINOIS_BUCKET_NAME
    skip_cleanup: true
-   local_dir: .next
+   local_dir: out
    on:
     branch: master
