@@ -23,7 +23,7 @@ const styles = theme => ({
         paddingBottom: theme.spacing.unit * 2,
     },
     subtitle: {
-        fontFamily: "Montserrat, GothamBlack, Helvetica, Arial, sans-serif",
+        fontFamily: "Montserrat",
         fontWeight: "bold",
         textAlign: "center",
         color: "rgb(17, 17, 47)",
@@ -32,7 +32,7 @@ const styles = theme => ({
     },
     cardCarousel: {
         display: 'flex',
-	margin: '2px',
+    margin: '2px',
     },
     card: {
         maxWidth: 335,
@@ -51,12 +51,12 @@ const styles = theme => ({
         marginBottom: 12,
     },
     cardTitle: {
-        fontFamily: 'Montserrat, GothamBlack, Helvetica, Arial, sans-serif',
-        color: 'white',
-        position: 'absolute',
-        bottom: 0,
-        padding: '10px',
-        fontWeight: 'bold'
+        fontFamily: 'Montserrat',
+        paddingBottom: '10px',
+        fontWeight: 'bold',
+    },
+    cardLink: {
+        textDecoration: 'none',
     },
     media: {
         height: 160,
@@ -67,24 +67,20 @@ const styles = theme => ({
         margin: theme.spacing.unit,
     },
     cardFont: {
-        fontFamily: "Montserrat, GothamBlack, Helvetica, Arial, sans-serif",
+        fontFamily: "Montserrat",
     },
     cardBlurb: {
-        fontFamily: "Montserrat, GothamBlack, Helvetica, Arial, sans-serif",
-        fontWeight: 'bold'
+        fontFamily: "Montserrat",
+        fontWeight: 'bold',
     },
     chipContribute: {
-        fontFamily: "Montserrat, GothamBlack, Helvetica, Arial, sans-serif",
-        background: 'rgb(237, 97, 164)'
+        fontFamily: "Montserrat",
+        background: 'rgb(237, 97, 164)',
+        cursor: 'pointer',
     },
     chipCreate: {
-        fontFamily: "Montserrat, GothamBlack, Helvetica, Arial, sans-serif",
-        background: 'rgb(64, 73, 158)'
-    },
-    githubLogo: {
-        position: 'absolute',
-        right: 0,
-        padding: '5px 10px'
+        fontFamily: "Montserrat",
+        background: 'rgb(64, 73, 158)',
     },
     gridList: {
         flexWrap: 'nowrap',
@@ -129,160 +125,10 @@ function Carousel(props) {
             <Typography className={classes.subtitle} variant="h5" component="h5">
                 PROJECTS
             </Typography>
-            {/* <GridList className={classes.gridList} cols={4}>
-            <GridListTile key={project.name}>
-            <Card className={classes.card}>
-                    <CardMedia
-                    className={classes.media}
-                    image="https://cdn-images-1.medium.com/max/2000/1*y6C4nSvy2Woe0m7bWEn4BA.png"
-                    title="Contemplative Reptile"
-                    >
-                    <Chip className={classes.chipContribute} label="Contributed" color="primary"></Chip>
-                    <IconButton className={classes.githubLogo} color="inherit" padding="20px">
-                    <FontAwesomeIcon 
-                        icon={["fab", "github"]}/>
-                    </IconButton>
-                    <Typography className={classes.cardTitle} variant="h5">Julia
-                    </Typography>
-                    </CardMedia>
-                    <CardContent>
-                    <Typography className={classes.cardFont} variant="subtitle1">
-                    Julia is a high-level, high-performance dynamic language for technical computing.
-                    </Typography>
-                    </CardContent>
-                </Card>
-            </GridListTile>
-            <GridListTile key={project.name}>
-                <Card className={classes.card}>
-                    <CardMedia
-                    className={classes.media}
-                    image="https://cdn-images-1.medium.com/max/2000/1*y6C4nSvy2Woe0m7bWEn4BA.png"
-                    title="Contemplative Reptile"
-                    >
-                    <Chip className={classes.chipCreate} label="Contributed" color="primary"></Chip>
-                    <IconButton className={classes.githubLogo} color="inherit" padding="20px">
-                    <FontAwesomeIcon 
-                        icon={["fab", "github"]}
-                        size="md"/>
-                    </IconButton>
-                    <Typography className={classes.cardTitle} variant="h5">Julia
-                    </Typography>
-                    </CardMedia>
-                    <CardContent>
-                    <Typography className={classes.cardFont} variant="subtitle1">
-                    Julia is a high-level, high-performance dynamic language for technical computing.
-                    </Typography>
-                    </CardContent>
-                </Card>
-            </GridListTile> */}
-            {/* {Object.keys(projectData).map(project => (
-                <GridListTile key={project.name}>
-                <Card className={classes.card}>
-                <CardMedia
-                className={classes.media}
-                image={project.image}
-                title={project.name}
-                >
-                <Chip className={classes.chipContribute} label={project.label}></Chip>
-                <IconButton className={classes.githubLogo} color="inherit" padding="20px" href={project.link}>
-                <FontAwesomeIcon 
-                    icon={["fab", "github"]}
-                    size="md"/>
-                </IconButton>
-                <Typography className={classes.cardTitle} variant="h5">{project.name}</Typography>
-                </CardMedia>
-                <CardContent>
-                <Typography className={classes.cardFont} variant="subtitle1">
-                {project.desc}
-                </Typography>
-                </CardContent>
-                </Card>
-                </GridListTile>
-            ))} */}
-      {/* </GridList> */}
             <div className={classes.cardCarousel}>
-                <Card className={classes.card}>
-                    <CardMedia
-                    className={classes.media}
-                    image="https://cdn-images-1.medium.com/max/2000/1*y6C4nSvy2Woe0m7bWEn4BA.png"
-                    title="Contemplative Reptile"
-                    >
-                    <Chip className={classes.chipContribute} label="Contributed" color="primary"></Chip>
-                    <IconButton className={classes.githubLogo} color="inherit" padding="20px">
-                    <FontAwesomeIcon 
-                        icon={["fab", "github"]}/>
-                    </IconButton>
-                    <Typography className={classes.cardTitle} variant="h5">Julia
-                    </Typography>
-                    </CardMedia>
-                    <CardContent>
-                    <Typography className={classes.cardFont} variant="subtitle1">
-                    Julia is a high-level, high-performance dynamic language for technical computing.
-                    </Typography>
-                    </CardContent>
-                </Card>
-                <Card className={classes.card}>
-                    <CardMedia
-                    className={classes.media}
-                    image="https://cdn-images-1.medium.com/max/2000/1*y6C4nSvy2Woe0m7bWEn4BA.png"
-                    title="Contemplative Reptile"
-                    >
-                    <Chip className={classes.chipCreate} label="Contributed" color="primary"></Chip>
-                    <IconButton className={classes.githubLogo} color="inherit" padding="20px">
-                    <FontAwesomeIcon 
-                        icon={["fab", "github"]}/>
-                    </IconButton>
-                    <Typography className={classes.cardTitle} variant="h5">Julia
-                    </Typography>
-                    </CardMedia>
-                    <CardContent>
-                    <Typography className={classes.cardFont} variant="subtitle1">
-                    Julia is a high-level, high-performance dynamic language for technical computing.
-                    </Typography>
-                    </CardContent>
-                </Card>
-                <Card className={classes.card}>
-                    <CardMedia
-                    className={classes.media}
-                    image="https://cdn-images-1.medium.com/max/2000/1*y6C4nSvy2Woe0m7bWEn4BA.png"
-                    title="Contemplative Reptile"
-                    >
-                    <Chip className={classes.chipCreate} label="Contributed" color="primary"></Chip>
-                    <IconButton className={classes.githubLogo} color="inherit" padding="20px">
-                    <FontAwesomeIcon 
-                        icon={["fab", "github"]}
-                        size="md"/>
-                    </IconButton>
-                    <Typography className={classes.cardTitle} variant="h5">Julia
-                    </Typography>
-                    </CardMedia>
-                    <CardContent>
-                    <Typography className={classes.cardFont} variant="subtitle1">
-                    Julia is a high-level, high-performance dynamic language for technical computing.
-                    </Typography>
-                    </CardContent>
-                </Card>
-                <Card className={classes.card}>
-                    <CardMedia
-                    className={classes.media}
-                    image="https://cdn-images-1.medium.com/max/2000/1*y6C4nSvy2Woe0m7bWEn4BA.png"
-                    title="Contemplative Reptile"
-                    >
-                    <Chip className={classes.chipCreate} label="Contributed" color="primary"></Chip>
-                    <IconButton className={classes.githubLogo} color="inherit" padding="20px">
-                    <FontAwesomeIcon 
-                        icon={["fab", "github"]}
-                        size="md"/>
-                    </IconButton>
-                    <Typography className={classes.cardTitle} variant="h5">Julia
-                    </Typography>
-                    </CardMedia>
-                    <CardContent>
-                    <Typography className={classes.cardFont} variant="subtitle1">
-                    Julia is a high-level, high-performance dynamic language for technical computing.
-                    </Typography>
-                    </CardContent>
-                </Card>
+            <GridList className={classes.gridList} cols={4}>
+            {html}
+            </GridList>
             </div>
         </div>
     );
@@ -292,4 +138,4 @@ Carousel.propTypes = {
     classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Blurb);
+export default withStyles(styles)(Carousel);
