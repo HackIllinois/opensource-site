@@ -11,11 +11,11 @@ import Avatar from '@material-ui/core/Avatar';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
-import IconButton from '@material-ui/core/IconButton';
+import Icon from '@material-ui/core/Icon';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import projectData from '../static/projectData';
+//import projectData from '../static/projectData';
 library.add(fab);
 
 const styles = theme => ({
@@ -32,11 +32,12 @@ const styles = theme => ({
     },
     cardCarousel: {
         display: 'flex',
+	margin: '2px',
     },
     card: {
         maxWidth: 335,
         margin: '0 auto',
-        borderRadius: '7%'
+        borderRadius: '7%',
     },
     bullet: {
         display: 'inline-block',
@@ -92,8 +93,36 @@ const styles = theme => ({
       },
 });
 
-function Blurb(props) {
+function Carousel(props) {
     const { classes } = props;
+    var projectData = require('../static/projectData');
+    const projectData = projectData.projectData;
+
+    let html = projectData.map(project => {
+        return (
+            <GridListTile key={project.name} rows="3">
+                <a href={project.link} className={classes.cardLink}>
+                    <Card className={classes.card}>
+                        <CardMedia
+                            className={classes.media}
+                            image={project.image}
+                            title={project.name}
+                        >
+                            <Chip className={classes.chipContribute} color="primary" label={project.label}></Chip>
+                        </CardMedia>
+                        <CardContent>
+                            <Typography className={classes.cardTitle} variant="title">
+                                {project.name}
+                            </Typography>
+                            <Typography className={classes.cardFont} variant="subtitle1">
+                                {project.desc}
+                            </Typography>
+                        </CardContent>
+                    </Card>
+                </a>
+            </GridListTile>
+        );
+    });
 
     return (
         <div className={classes.root}>
@@ -259,7 +288,7 @@ function Blurb(props) {
     );
 }
 
-Blurb.propTypes = {
+Carousel.propTypes = {
     classes: PropTypes.object.isRequired,
 };
 

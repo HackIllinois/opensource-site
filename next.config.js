@@ -1,3 +1,7 @@
-// next.config.js
-const withFonts = require('next-fonts');
-module.exports = withFonts();
+module.exports = {
+  exportPathMap: function() {
+    return {
+      '/': { page: '/' }
+    }
+  }
+}
