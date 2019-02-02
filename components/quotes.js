@@ -48,17 +48,17 @@ const styles = theme => ({
         margin: 10,
       },
       quote: {
-        fontFamily: "Montserrat",
+        fontFamily: "Montserrat, GothamBlack, Helvetica, Arial, sans-serif",
         fontWeight: "22pt",
         color: 'rgb(17, 17, 47)',
         padding: theme.spacing.unit * 2,
       },
       name: {
-        fontFamily: "Montserrat",
+        fontFamily: "Montserrat, GothamBlack, Helvetica, Arial, sans-serif",
         color: 'rgb(17, 17, 47)',
       },
       project: {
-        fontFamily: "Montserrat",
+        fontFamily: "Montserrat, GothamBlack, Helvetica, Arial, sans-serif",
         color: 'rgb(17, 17, 47)',
       }
 });
@@ -88,58 +88,58 @@ const testimonials = [
 ];
 
 class Quotes extends React.Component {
-    state = {
-      activeStep: 0,
-    };
-  
-    handleNext = () => {
-      this.setState(prevState => ({
-        activeStep: prevState.activeStep + 1,
-      }));
-    };
-  
-    handleBack = () => {
-      this.setState(prevState => ({
-        activeStep: prevState.activeStep - 1,
-      }));
-    };
-  
-    handleStepChange = activeStep => {
-      this.setState({ activeStep });
-    };
-  
-    render() {
-      const { classes, theme } = this.props;
-      const { spacing } = this.state;
-      const { activeStep } = this.state;
-      const maxSteps = testimonials.length;
-  
-      return (
-        <div className={classes.root}>
-          <Grid container> 
-          {testimonials.map((step, index) => (
-            <Grid key={step.label} item xs={4}>
-              <div className={classes.paperRoot}>
-              <Paper className={classes.paper} elevation={1}>
-                  <Typography className={classes.quote} variant="h6" component="p"> "{step.quote}"</Typography>
-                  <Grid container>
-                    <Grid item>
-                    <Avatar alt={step.name} src={step.img} className={classes.bigAvatar} />
-                    </Grid>
-                    <Grid item className={classes.paperText}>
-                    <Typography className={classes.name} variant="h6" component="p"><strong>{step.name}</strong></Typography>
-                    <Typography className={classes.project} variant="h6" component="p">{step.project}</Typography>
-                    </Grid>
+  state = {
+    activeStep: 0,
+  };
+
+  handleNext = () => {
+    this.setState(prevState => ({
+      activeStep: prevState.activeStep + 1,
+    }));
+  };
+
+  handleBack = () => {
+    this.setState(prevState => ({
+      activeStep: prevState.activeStep - 1,
+    }));
+  };
+
+  handleStepChange = activeStep => {
+    this.setState({ activeStep });
+  };
+
+  render() {
+    const { classes, theme } = this.props;
+    const { spacing } = this.state;
+    const { activeStep } = this.state;
+    const maxSteps = testimonials.length;
+
+    return (
+      <div className={classes.root}>
+        <Grid container> 
+        {testimonials.map((step, index) => (
+          <Grid key={index} item xs={4}>
+            <div className={classes.paperRoot}>
+            <Paper className={classes.paper} elevation={1}>
+                <Typography className={classes.quote} variant="h6" component="p"> "{step.quote}"</Typography>
+                <Grid container>
+                  <Grid item>
+                  <Avatar alt={step.name} src={step.img} className={classes.bigAvatar} />
                   </Grid>
-                  </Paper>
-              </div>
-            </Grid>
-            ))}
+                  <Grid item className={classes.paperText}>
+                  <Typography className={classes.name} variant="h6" component="p"><strong>{step.name}</strong></Typography>
+                  <Typography className={classes.project} variant="h6" component="p">{step.project}</Typography>
+                  </Grid>
+                </Grid>
+                </Paper>
+            </div>
           </Grid>
-        </div>
-      );
-    }
+          ))}
+        </Grid>
+      </div>
+    );
   }
+}
 
 Quotes.propTypes = {
     classes: PropTypes.object.isRequired,

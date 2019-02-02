@@ -23,14 +23,14 @@ const styles = theme => ({
     [theme.breakpoints.up('sm')]: {
       display: 'block',
     },
-    fontFamily: 'Montserrat',
+    fontFamily: 'Montserrat, GothamBlack, Helvetica, Arial, sans-serif',
   },
   logo: {
     display: 'none',
     [theme.breakpoints.up('sm')]: {
       display: 'block',
     },
-    fontFamily: 'GothamBlack',
+    fontFamily: 'GothamBlack, Montserrat, Helvetica, Arial, sans-serif',
     paddingRight: '3px',
     color: "rgb(17, 17, 47)",
   },
@@ -42,7 +42,7 @@ const styles = theme => ({
     padding: '0 5px',
   },
   menuButton: {
-    fontFamily: 'Montserrat',
+    fontFamily: 'Montserrat, GothamBlack, Helvetica, Arial, sans-serif',
     borderRadius: '25px',
     fontWeight: 'bold',
   }

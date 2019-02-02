@@ -4,10 +4,10 @@ import Blurb from '../components/topBlurb';
 import Carousel from '../components/carousel';
 import Quotes from '../components/quotes';
 import Footer from '../components/footer';
-import Contact from '../components/contact'
+import Contact from '../components/contact';
 
 const Index = () => (
-  <div>
+  <React.Fragment>
     <Head>
       <title>HackIllinois Open Source</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -21,23 +21,29 @@ const Index = () => (
       <Contact/>
       <Footer/>
     </body>
-    <style jsx>{`
+    <style dangerouslySetInnerHTML={{__html: `
       html {
-        /* To make use of full height of page*/
-        min-height: 100%;
-        margin: 0;
-        }
-      body {
-        display: block;
-        margin: 0px;
-        min-height: 100%;
-        width: 100%;
-        box-sizing: border-box;
-        color: white;
-        background-color: white;
+          /* To make use of full height of page*/
+          min-height: 100%;
+          margin: 0;
       }
-    `}</style>
-  </div>
+      body {
+          display: block;
+          margin: 0px;
+          min-height: 100%;
+          width: 100%;
+          box-sizing: border-box;
+          color: white;
+      }
+      @font-face {
+          font-family: 'GothamBlack';
+          font-style: normal;
+          src: local('GothamBlack'), url('/static/fonts/GothamBlack.woff2') format('woff2'),
+               local('GothamBlack'), url('/static/fonts/GothamBlack.woff') format('woff'),
+               local('GothamBlack'), url('/static/fonts/GothamBlack.otf') format('opentype');
+      }
+    `}}/>
+  </React.Fragment>
 )
 
 export default Index

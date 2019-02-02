@@ -16,19 +16,19 @@ const styles = theme => ({
     borderRadius: '0',
   },
   title: {
-    fontFamily: "Montserrat",
+    fontFamily: "Montserrat, GothamBlack, Helvetica, Arial, sans-serif",
     textAlign: "center",
     fontWeight: "regular",
     color: "white",
   },
   logo: {
-    fontFamily: "GothamBlack",
+    fontFamily: "GothamBlack, Montserrat, Helvetica, Arial, sans-serif",
     textAlign: "center",
     fontWeight: "medium",
     color: "white",
   },
   body: {
-    fontFamily: "Montserrat",
+    fontFamily: "Montserrat, GothamBlack, Helvetica, Arial, sans-serif",
     textAlign: "center",
     color: "white",
     useNextVariants: true,
@@ -37,7 +37,7 @@ const styles = theme => ({
     paddingBottom: theme.spacing.unit * 2,
   },
   right: {
-    fontFamily: "Montserrat",
+    fontFamily: "Montserrat, GothamBlack, Helvetica, Arial, sans-serif",
     textAlign: "right",
     color: "white",
     useNextVariants: true,
@@ -61,7 +61,7 @@ const styles = theme => ({
     margin: "0 auto",
     width: "70%",
     textAlign: "center",
-    fontFamily: "Montserrat",
+    fontFamily: "Montserrat, GothamBlack, Helvetica, Arial, sans-serif",
     padding: "10px",
   }
 });
@@ -81,7 +81,7 @@ function Blurb(props) {
   return (
     <div>
       <Paper className={classes.root} elevation={1}>
-        <Grid container sm={12}>
+        <Grid container>
           {/* Left */}
           <Grid item sm={12} md={6} lg={6} className={classes.left}>
           {/* <img src={logo} alt="HackIllinois Logo" /> */}
@@ -96,14 +96,14 @@ function Blurb(props) {
           {/* Right */}
           <Grid item sm={12} md={6} lg={6}>
             <Typography className={classes.right} variant="h5" component="p">
-              Two years ago HackIllinois reinvented the college Hackathon. <p /> We brought the best <strong>open source engineers</strong> in the world to work with <strong>college students</strong> on open source.<p/>
+              Two years ago HackIllinois reinvented the college Hackathon. <br /> We brought the best <strong>open source engineers</strong> in the world to work with <strong>college students</strong> on open source.
             </Typography>
           </Grid>
         </Grid>
         <Typography className={classes.body} variant="h5" component="p">
         At HackIllinois, we had:
       </Typography>
-      <Grid container sm={12} className={classes.table}>
+      <Grid container className={classes.table}>
         <Grid item sm={4} xs={7}>
         <AnimatedNumber
                 style={animatedStyle}
