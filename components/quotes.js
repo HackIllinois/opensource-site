@@ -64,29 +64,28 @@ const styles = theme => ({
 });
 
 const testimonials = [
-    {
-        quote: 'Instead of emphasizing competition, HackIllinois emphasizes teaching and introducing a new generation of developers to the collaborative open-source process – this is a phenomenal way to get fresh faces contributing to OSS projects.',
-        name: 'Ben Coe',
-        project: 'NPM',
-        year: '2018',
-        avatar: ''
-    },
-    {
-        quote: 'HackIllinois gives students the opportunity to learn something new while also giving back to the open source community that we all love. By showing that open source projects are approachable, HackIllinois is helping get more people into open  source which is great for growing the community!',
-        name: 'Tyler Leonhardt',
-        project: 'PowerShell',
-        year: '2018',
-        avatar: ''
-    },
-    {
-        quote: 'It’s been really invigorating to get this many pull requests … I’ve [merged] 10 pull requests this weekend, which is probably more I’ve gotten in the last 6 months for this project ',
-        name: 'Blaine Bublitz',
-        project: 'Gulp.js',
-        year: '2017',
-        avatar: ''
-    },
+  {
+      quote: 'Instead of emphasizing competition, HackIllinois emphasizes teaching and introducing a new generation of developers to the collaborative open-source process – this is a phenomenal way to get fresh faces contributing to OSS projects.',
+      name: 'Ben Coe',
+      project: 'NPM',
+      year: '2018',
+      avatar: '../static/avatars/ben.jpg'
+  },
+  {
+      quote: 'HackIllinois gives students the opportunity to learn something new while also giving back to the open source community that we all love. By showing that open source projects are approachable, HackIllinois is helping get more people into open  source which is great for growing the community!',
+      name: 'Tyler Leonhardt',
+      project: 'PowerShell',
+      year: '2018',
+      avatar: '../static/avatars/tyler.jpg'
+  },
+  {
+      quote: 'It’s been really invigorating to get this many pull requests … I’ve [merged] 10 pull requests this weekend, which is probably more I’ve gotten in the last 6 months for this project ',
+      name: 'Blaine Bublitz',
+      project: 'Gulp.js',
+      year: '2017',
+      avatar: '../static/avatars/blaine.jpeg'
+  },
 ];
-
 class Quotes extends React.Component {
   state = {
     activeStep: 0,

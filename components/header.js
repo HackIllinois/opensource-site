@@ -66,8 +66,8 @@ function SearchAppBar(props) {
             color="black"/> */}
           <div className={classes.grow} />
           <div className={classes.menuButton}> 
-          <Button className={classes.menuButton} color="inherit">2019</Button>
-          <Button className={classes.menuButton} color="inherit">BLOG</Button>
+          <Button className={classes.menuButton} color="inherit" href="http://hackillinois.org">2019</Button>
+          <Button className={classes.menuButton} color="inherit" href="http://blog.hackillinois.org">BLOG</Button>
           </div>
         </Toolbar>
       </AppBar>
