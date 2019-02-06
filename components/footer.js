@@ -49,34 +49,24 @@ const styles = theme => ({
               HACKILLINOIS
             </Typography>
             <div className={classes.social}> 
-                <IconButton color="inherit">
+                <IconButton color="inherit" href="https://www.github.com/hackillinois" target="_blank">
                   <FontAwesomeIcon 
                     icon={["fab", "github"]}
                     size="sm"/>
                 </IconButton>
-                <IconButton color="inherit">
-                  <FontAwesomeIcon 
-                    icon={["fas", "rss"]}
-                    size="sm"/>
-                </IconButton>
-                <IconButton color="inherit">
+                <IconButton color="inherit" href="https://www.facebook.com/hackillinois/" target="_blank">
                   <FontAwesomeIcon 
                     icon={["fab", "facebook-square"]}
                     size="sm"/>
                 </IconButton>
-                <IconButton color="inherit">
+                <IconButton color="inherit" href="https://www.instagram.com/hackillinois/" target="_blank">
                   <FontAwesomeIcon 
                     icon={["fab", "instagram"]}
                     size="sm"/>
                 </IconButton>
-                <IconButton color="inherit">
+                <IconButton color="inherit" href="https://twitter.com/HackIllinois" target="_blank">
                   <FontAwesomeIcon 
                     icon={["fab", "twitter"]}
-                    size="sm"/>
-                </IconButton>
-                <IconButton color="inherit">
-                  <FontAwesomeIcon 
-                    icon={["far", "envelope"]}
                     size="sm"/>
                 </IconButton>
             </div>
