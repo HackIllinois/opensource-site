@@ -83,7 +83,7 @@ const testimonials = [
       name: 'Blaine Bublitz',
       project: 'Gulp.js',
       year: '2017',
-      avatar: '../static/avatars/blaine.jpeg'
+      avatar: '../static/avatars/blaine.png'
   },
 ];
 class Quotes extends React.Component {
@@ -115,7 +115,7 @@ class Quotes extends React.Component {
 
     return (
       <div className={classes.root}>
-        <Grid container> 
+        <Grid container>
         {testimonials.map((step, index) => (
           <Grid key={index} item xs={4}>
             <div className={classes.paperRoot}>
@@ -123,7 +123,7 @@ class Quotes extends React.Component {
                 <Typography className={classes.quote} variant="h6" component="p"> "{step.quote}"</Typography>
                 <Grid container>
                   <Grid item>
-                  <Avatar alt={step.name} src={step.img} className={classes.bigAvatar} />
+                  <Avatar alt={step.name} src={step.avatar} className={classes.bigAvatar} />
                   </Grid>
                   <Grid item className={classes.paperText}>
                   <Typography className={classes.name} variant="h6" component="p"><strong>{step.name}</strong></Typography>

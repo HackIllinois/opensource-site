@@ -91,8 +91,8 @@ const styles = theme => ({
 
 function Carousel(props) {
     const { classes } = props;
-    var projectData = require('../static/projectData');
-    const projectData = projectData.projectData;
+    var pd = require('../static/projectData');
+    const projectData = pd.projectData;
 
     let html = projectData.map(project => {
         return (

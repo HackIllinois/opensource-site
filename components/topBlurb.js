@@ -111,7 +111,7 @@ function Blurb(props) {
                 value={200}
                 duration={1000}
                 formatValue={n => `${n}`} />
-        <p>pull requests</p>      
+        <p>pull requests</p>
         </Grid>
         <Grid item sm={4} xs={7}>
         <AnimatedNumber
@@ -120,7 +120,7 @@ function Blurb(props) {
                 value={1738}
                 duration={1000}
                 formatValue={n => `${n}`} />
-                        <p>students</p>   
+                        <p>students</p>
         </Grid>
         <Grid item sm={4} xs={7}>
         <AnimatedNumber
@@ -129,7 +129,7 @@ function Blurb(props) {
               value={1871}
               duration={1000}
               formatValue={n => `${n}`} />
-                      <p>mentors</p>   
+                      <p>mentors</p>
         </Grid>
       </Grid>
       </Paper>
