@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,800&display=swap');
+
+* {
+  font-family: 'Montserrat';
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

@@ -1,0 +1,42 @@
+.quote {
+  display: inline-block;
+  text-align: left;
+  width: 70%;
+  position: relative;
+  margin: 0.5em;
+  padding: 0.5em 2em 0.5em 3em;
+}
+.quote:before {
+  font-family: 'Helvetica';
+  color: #E28B79;
+  position: absolute;
+  font-size: 4em;
+  line-height: 0.8;
+  top: 0;
+  left: 0;
+  content: '\201C';
+}
+.quote:after {
+  font-family: 'Helvetica';
+  color: #E28B79;
+  position: absolute;
+  float: right;
+  font-size: 4em;
+  line-height: 1;
+  right: 0;
+  bottom: -0.5em;
+  content: '\201D';
+}
+
+.mentor {
+  display: inline-block;
+  padding-left: 3vw;
+  vertical-align: top;
+  width: 25%;
+
+  img {
+    border-radius: 50%;
+    margin-bottom: 2vh;
+    width: 8vw;
+  }
+}

@@ -1,0 +1,96 @@
+.header {
+  background-color: #222B5C;
+  padding: 5em 20vw;
+  text-align: center;
+
+  h1 {
+    color: white;
+    font-size: 6vw;
+    font-weight: 600;
+  }
+
+  hr {
+    border: 2px solid #E28B79;
+    margin: 1.5em 0;
+  }
+
+  p {
+    color: white;
+    font-weight: 400;
+    margin-bottom: 1vh;
+
+    b {
+      font-weight: 600;
+    }
+  }
+
+  .tagline {
+    margin-bottom: 3em;
+  }
+
+  .stat {
+    display: inline-block;
+    width: 33%;
+
+    h2 {
+      color: #E28B79;
+      font-size: 2.4em;
+      font-weight: 600;
+      margin: 0;
+    }
+  }
+}
+
+.carousel {
+  .control-dots {
+    padding: 0;
+
+    .dot {
+      background: #222B5C;
+      box-shadow: none;
+      opacity: 1;
+    }
+    .dot.selected, .dot:hover {
+      background: #E28B79;
+    }
+  }
+
+  .slide {
+    background-color: white;
+    color: #222B5C;
+    font-weight: 600;
+    padding: 4em 20vw;
+  }
+}
+
+hr {
+  border: 2px solid #222B5C;
+  margin: 1.5em 0;
+}
+
+h2 {
+  color: #E28B79;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.projects {
+  margin: 2em 0;
+
+  h2 {
+    text-align: center;
+    color: #E28B79;
+  }
+
+  .project {
+    img {
+      margin-bottom: 1em;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 1.2em;
+      margin-bottom: 0.5em;
+    }
+  }
+}
