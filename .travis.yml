@@ -14,6 +14,6 @@ deploy:
    secret_access_key: $HACKILLINOIS_SECRET_KEY
    bucket: $HACKILLINOIS_BUCKET_NAME
    skip_cleanup: true
-   local_dir: out
+   local_dir: build
    on:
     branch: master
