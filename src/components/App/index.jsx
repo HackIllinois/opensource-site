@@ -49,7 +49,7 @@ class App extends React.Component {
           <p>Last year, we had</p>
           <div>
             <div className="stat">
-              <h2>1,738</h2>
+              <h2>952</h2>
               <p>Students</p>
             </div>
             <div className="stat">
