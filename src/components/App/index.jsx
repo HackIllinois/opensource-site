@@ -57,7 +57,7 @@ class App extends React.Component {
               <p>Pull Requests</p>
             </div>
             <div className="stat">
-              <h2>1,871</h2>
+              <h2>52</h2>
               <p>Mentors</p>
             </div>
           </div>
