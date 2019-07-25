@@ -53,7 +53,7 @@ class App extends React.Component {
               <p>Students</p>
             </div>
             <div className="stat">
-              <h2>200</h2>
+              <h2>269</h2>
               <p>Pull Requests</p>
             </div>
             <div className="stat">
