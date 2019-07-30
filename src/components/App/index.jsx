@@ -29,7 +29,6 @@ import npm from 'assets/projects/npm.png';
 import numpy from 'assets/projects/numpy.png';
 import pandas from 'assets/projects/pandas.png';
 import powershell from 'assets/projects/powershell.png';
-import prairielearn from 'assets/projects/prairielearn.png';
 import puppeteer from 'assets/projects/puppeteer.png';
 import julia from 'assets/projects/julia.png';
 import react from 'assets/projects/react.png';
